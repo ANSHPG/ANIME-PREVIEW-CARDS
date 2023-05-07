@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Anime-Flash</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body{
+      margin:0;
+    }
+    .container{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr ;
+      width: 620px;
+      height: 400px;
+      background-color: rgba(0,0,0,1);
+      padding: 20px;
+      padding-bottom: 25px; 
+      column-gap: 16px;
+      border-radius: 0;
+    }
+    .preview{
+      border-radius : 2px;
+      display: grid;
+      background-color :rgb(0,0,0);
+    }
+   .image-preview{
+     width: 100%;
+     margin-bottom: 0px;
+   }
+   .image-preview:hover{
+     filter: brightness(50%);
+   }
+   .name{
+     display:inline-block;
+     font-family: 'Roboto', sans-serif;
+     font-size:15px;
+     font-weight: bold;
+     color: rgba(201,233,98,255);
+     margin-bottom: 0;
+   }
+   .name:hover{
+     color: rgba(255,255,255,0.7);
+   }
+   .name:hover +.tv{
+     color: rgba(201,233,98,255);
+   }
+   .tv{
+     margin-top: 7px;
+     margin-bottom: 8px;
+     display: inline-block;
+     font-family: 'Roboto', sans-serif;
+     font-size: 13px;
+     font-weight: 400;
+     color: rgba(255,255,255,0.7);
+     word-spacing: 2px;
+   }
+   .tags{
+     font-family: 'Roboto',sans-serif;
+     font-size: 11px;
+     font-weight: 450;
+     color: rgba(0,0,0,1);
+     background-color: rgba(201,233,98,255);
+     margin-right: 2px;
+     padding: 4px;
+     border: none;
+     border-radius : 4px;
+   }
+   .tags:hover{
+     opacity: 1;
+     background-color: black;
+     color: rgba(201,233,98,255);
+   }
+   .year-button{
+     top: 90%;
+     left: 82%;
+     font-family: 'Roboto',sans-serif;
+     font-size: 11px;
+     font-weight: 450;
+     color: rgba(0,0,0,1);
+     background-color: rgba(201,233,98,1);
+     margin-right: 2px;
+     padding: 4px;
+     border: none;
+     border-radius : 4px;
+   }
+   .year-button:hover{
+     color:rgba(201,233,98,1);
+     background-color: rgba(0,0,0,0.6);
+   }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="first preview" >
+      <div style="position: relative">
+      <img class="image-preview"  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/d48d4a62b0ac6381c87bd040b69b0a89.jpe" alt="demonslayer">
+      
+        <button class="year-button" style="position: absolute">2022</button>
+      </div>
+      <p class="name" style="margin-bottom: 0">Demon Slayer:<br>Entertainment district arc</p>
+      <p class="tv">TV &#183 18 Episodes &#183 24m</p>
+      <div class="container-2">
+        <button class="tags">Shounen</button>
+        <button class="tags">Fantasy</button>
+      </div>
+      
+    </div>
+    <div class="second preview">
+      <div style="position: relative">
+      <img class="image-preview" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTrTXcBMRN1MdRZlgSTr2GMg4N_oWWGNB_YA&usqp=CAU" alt="myheroacademia">
+      
+      <button class="year-button" style="position: absolute">2023</button>
+      </div>
+      <p class="name">My Hero Academia:<br>Season 6</p>
+      <p class="tv">TV &#183 25 Episodes &#183 24m</p>
+      <div class="container-2">
+        <button class="tags">School</button>
+        <button class="tags">Super power</button>
+        <button class="tags">Action</button>
+      </div>
+    </div>
+    <div class="third preview" >
+        <div style="position: relative">
+        <img class="image-preview" src="https://img1.ak.crunchyroll.com/i/spire2/399aa970fd978444308e83f9e35262d41590748750_full.jpg" alt="attackontitan">
+        
+        <button class="year-button" style="position: absolute; top: 95%">2021</button>
+        </div>
+      <p class="name" style="margin-top: 30px">Attack on Titan:<br>Final Season, Part 1</p>
+      <p class="tv">TV &#183 16 Episodes &#183 23m</p>
+      <div class="container-2">
+        <button class="tags">Mystery</button>
+        <button class="tags">Drama</button>
+        <button class="tags">Millitary</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
